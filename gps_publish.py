@@ -67,11 +67,6 @@ def readGPS():
         print (e)
 connectBus()
 
-def parse_gngga(sentence):
-    components = sentence.split(",")
-    latitude = float(components[2])
-    longitude = float(components[4])
-    return latitude, longitude
 
 while True:
     gps_data = readGPS()
